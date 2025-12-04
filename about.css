@@ -15,7 +15,8 @@ body {
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    padding-top: 40px; /* Space from the top to account for the nav */
+    padding-top: 70px; /* Space from the top to account for the nav */
+    padding-bottom: 40px;
 }
 
 /* --- Background Text Container (Hero Section) --- */
@@ -41,7 +42,6 @@ body {
 .team-section {
     width: 100%;
     padding: 60px 20px;
-    margin-top: 450px;
     text-align: center;
     background-color: transparent; /* Changed from #f9f9f9 to transparent */
 }

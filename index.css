@@ -1,0 +1,171 @@
+/* --- Global Styles --- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url('images/beach.jpg');
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Hero Text Styling --- */
+.background-text-container {
+    /* Removed absolute positioning to allow it to participate in the flex layout */
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    flex-grow: 1; /* Allow it to take up available space */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.background-title {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.background-blurb {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+/* --- Navigation Bar Styling --- */
+nav {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.nav-logo, .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-logo #bizname {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.nav-links {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-search-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#searchInput {
+    flex-grow: 1;
+    width: 250px;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-search-wrapper button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 0 20px 20px 0;
+}
+
+.nav-search-wrapper button:hover {
+    background-color: #777;
+}
+
+/* --- Side Bar and Card Styling --- */
+.main-content-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    /* Removed padding-top here as it's better handled by body padding */
+    padding-top: 70px; /* Add enough padding to avoid nav overlap */
+}
+
+.recommendations-sidebar {
+    position: sticky;
+    top: 70px; /* Align with the bottom of the nav bar */
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    align-self: flex-start;
+    z-index: 999; /* Higher than other content, but lower than nav */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}

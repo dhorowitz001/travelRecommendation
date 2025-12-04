@@ -1,0 +1,107 @@
+/* --- Background Image for About Page --- */
+body {
+    background-image: url('images/beach.jpg');
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+}
+
+/* --- Layout for About Page Main Content --- */
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 40px; /* Space from the top to account for the nav */
+}
+
+/* --- Background Text Container (Hero Section) --- */
+.background-text-container {
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    padding: 0 20px 40px 20px;
+    margin: 0;
+}
+
+.background-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.background-blurb {
+    font-size: 1.2em;
+}
+
+/* --- Team Section Styling --- */
+.team-section {
+    width: 100%;
+    padding: 60px 20px;
+    margin-top: 450px;
+    text-align: center;
+    background-color: transparent; /* Changed from #f9f9f9 to transparent */
+}
+
+/* --- Team Member Card Styling --- */
+.team-header {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member-info h3 {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.member-title {
+    font-size: 1em;
+    color: #777;
+    margin: 0 0 10px 0;
+}
+
+.member-role {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

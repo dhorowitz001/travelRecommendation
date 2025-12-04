@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horowitz Travel Agency</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+        <div class="nav-logo">
+            <li><a href="./index.html"><img src="./images/plane.png" alt="Horowitz Travel Agency Logo" id="logo"></a></li>
+            <li id="bizname">Horowitz Travel Agency</li>
+        </div>
+        <div class="nav-links">
+            <li><a href="./index.html" id="home">Home </a></li>
+            <li><a href="./about.html" id="about">About</a></li>          
+            <li><a href="./contact.html" id="contact">Contact</a></li>
+        </div>
+        <div class="nav-search-wrapper">
+            <li><input type="text" id="searchInput" placeholder="Search for..."></li>
+            <li><button id='btnSearch'>Search</button></li>
+            <li><button id="btnClear">Clear</button></li>
+        </div>
+        </ul>
+    </nav>
+    <main class="main-content-container">
+        <section class="background-text-container">
+            <h1 class="background-title">Explore Your Dreams</h1>
+            <p class="background-blurb">Travel far and wide to discover new cultures, breathtaking landscapes, and unforgettable adventures. Your next journey awaits.</p>
+        </section>
+        <!-- Search results will appear here -->
+        <section id="recommendationsList" class="recommendations-sidebar" style="display: none;">
+            <h2>Search Results</h2>
+            <!-- Search result cards will be dynamically inserted here by JavaScript -->
+            <div class="card">
+
+            </div>
+        </section>
+    </main>
+<script src="./index.js"></script>
+</body>
+</html>

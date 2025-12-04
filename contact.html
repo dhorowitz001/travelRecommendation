@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horowitz Travel Agency</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./contact.css">
+
+</head>
+<body class="site-container">
+    <nav>
+        <ul>
+        <div class="nav-logo">
+            <li><a href="./index.html"><img src="./images/plane.png" alt="Horowitz Travel Agency Logo" id="logo"></a></li>
+            <li id="bizname">Horowitz Travel Agency</li>
+        </div>
+        <div class="nav-links">
+            <li><a href="./index.html" id="home">Home </a></li>
+            <li><a href="./about.html" id="about">About Us </a></li>          
+            <li><a href="./contact.html" id="contact">Contact Us </a></li>
+        </div>
+        </ul>
+    </nav>
+    <main class="content-wrap">
+        <section class="contact-text-container">
+            <h1 class="contact-title">Contact Us</h1>
+            </section>
+    </main>
+    <form id="contactForm" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+<script src="./contact.js"></script>
+</body>
+</html>

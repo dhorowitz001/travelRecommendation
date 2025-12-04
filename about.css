@@ -1,4 +1,12 @@
-/* --- Background Image for About Page --- */
+/* --- Global Reset and Body Styling --- */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh; /* Make sure the body is at least the viewport height */
+}
+
 body {
     background-image: url('images/beach.jpg');
     background-color: #f0f0f0;
@@ -6,26 +14,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "Roboto", sans-serif;
 }
 
-/* --- Layout for About Page Main Content --- */
+/* --- Main Content Layout --- */
 .content-wrap {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-    padding-top: 70px; /* Space from the top to account for the nav */
-    padding-bottom: 40px;
+    align-items: center; /* Horizontally centers content */
+    padding-top: 150px; /* Pushes content down past the fixed nav */
 }
 
 /* --- Background Text Container (Hero Section) --- */
 .background-text-container {
     text-align: center;
-    color: black;
+    color: black; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     max-width: 800px;
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 40px; /* Added bottom padding */
     margin: 0;
 }
 
@@ -43,7 +48,7 @@ body {
     width: 100%;
     padding: 60px 20px;
     text-align: center;
-    background-color: transparent; /* Changed from #f9f9f9 to transparent */
+    background-color: transparent; /* Removed the background color */
 }
 
 /* --- Team Member Card Styling --- */
